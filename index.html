@@ -60,10 +60,20 @@
     }
 
     .brand {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.2rem;
-      letter-spacing: 0.08em;
-    }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
     .nav-links {
       display: flex;
@@ -221,7 +231,10 @@
 
   <nav>
     <div class="nav-inner">
-      <div class="brand">D. S. ECHO</div>
+      <div class="brand">
+  <img src="dsecho-logo.png" alt="D. S. Echo logo">
+  <span>D. S. ECHO</span>
+</div>
 
       <div class="nav-links">
         <a href="#books">Books</a>
