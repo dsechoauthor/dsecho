@@ -220,6 +220,23 @@
       font-size: 1.08rem;
     }
 
+    .series-progression {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 28px 0 46px;
+      color: var(--muted);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .series-progression strong {
+      color: var(--text);
+      font-weight: normal;
+    }
+
+    .series-arrow { color: var(--accent-soft); }
+
     .book-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
@@ -255,6 +272,16 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 1.45rem;
       margin: 30px 0;
+    }
+
+    .book-question {
+      margin-top: 30px;
+      padding: 20px 22px;
+      border-left: 3px solid var(--accent);
+      background: rgba(21, 19, 17, 0.45);
+      color: var(--text) !important;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.16rem !important;
     }
 
     .book-status {
@@ -424,7 +451,13 @@
         <div class="series-intro">
           <div class="section-label">The Hawthorne Series</div>
           <h2>Hawthorne</h2>
-          <p>Character-driven post-apocalyptic fiction about ordinary people building something after collapse—and the moral choices that follow when survival is no longer the only question.</p>
+          <p>Character-driven post-apocalyptic fiction about ordinary people rebuilding more than shelter: relationships, institutions, and the rules they are willing to live by when every solution creates another moral cost.</p>
+        </div>
+
+        <div class="series-progression" aria-label="Hawthorne series progression">
+          <strong>Hawthorne I — Shelter</strong>
+          <span class="series-arrow">→</span>
+          <strong>Hawthorne II — Alliance</strong>
         </div>
 
         <div class="book-layout">
@@ -437,6 +470,7 @@
             <p>Micah Carver is an inventory manager. He is used to counting parts, shortages, and deciding what can be stretched.</p>
             <div class="highlight">Then the numbers become people.</div>
             <p>A character-driven post-apocalyptic novel about conscience, responsibility, authority, and the moral cost of keeping people alive when there is no longer a system to decide what is fair.</p>
+            <p class="book-question">What gives one person the right to decide who gets protected when there is not enough for everyone?</p>
           </div>
 
           <aside class="book-status" aria-label="Book One release status">
@@ -452,14 +486,17 @@
             <div class="section-label">In Progress</div>
             <div class="series-line">HAWTHORNE II</div>
             <h2>The Terms of Alliance</h2>
+            <div class="subtitle">A Novel of Autonomy and Dependence</div>
             <p>Hawthorne has learned how to endure. The next problem is what happens when independent communities can no longer pretend that roads, fuel, information, medicine, and risk belong to only one place.</p>
-            <p>Cooperation can protect people. It can also create expectations, obligations, and leverage.</p>
+            <p>Cooperation can protect people. It can also create expectations, leverage, and decisions that reach beyond a single community.</p>
             <div class="highlight">How much can people share before cooperation starts to feel like control?</div>
+            <p class="book-question">How much autonomy can a community keep once other people begin depending on it—and it begins depending on them?</p>
           </div>
 
           <aside class="book-status" aria-label="Book Two status">
             <strong>In Progress</strong>
             <p><em>The Terms of Alliance</em> is the second novel in the Hawthorne series.</p>
+            <p><em>A Novel of Autonomy and Dependence.</em></p>
             <p>More information will be added as the manuscript develops.</p>
             <span class="coming-link">Hawthorne II</span>
           </aside>
@@ -477,7 +514,7 @@
 
         <div class="dilemma-grid">
           <div class="dilemma-card">
-            <div class="section-label">Dilemma One</div>
+            <div class="section-label">Dilemma One · Scarcity</div>
             <h3>One reserve. Two needs.</h3>
             <p>A settlement has one remaining emergency battery bank before a hard freeze. The same reserve can either extend overnight radio coverage for outside warnings or keep critical building circulation running longer if the generator fails.</p>
             <p class="dilemma-question">Where do you put the reserve?</p>
@@ -506,7 +543,7 @@
           </div>
 
           <div class="dilemma-card">
-            <div class="section-label">Dilemma Two</div>
+            <div class="section-label">Dilemma Two · Authority</div>
             <h3>The road everyone needs.</h3>
             <p>Three independent communities depend on the same damaged road. One community has heavy equipment, one has fuel, and one has the largest labor pool. The repair will benefit all three, but no one wants a shared project to become a precedent for shared authority.</p>
             <p class="dilemma-question">Do you create a joint repair agreement, or keep each group responsible only for its own stretch?</p>
@@ -535,7 +572,7 @@
           </div>
 
           <div class="dilemma-card">
-            <div class="section-label">Dilemma Three</div>
+            <div class="section-label">Dilemma Three · Responsibility</div>
             <h3>Nine people at the gate.</h3>
             <p>A small settlement has food and sleeping space for nine more people through winter, but taking them in will erase nearly all of the community's safety margin. Turning them away protects the current residents. Accepting them may save nine lives—and make every future shortage harder.</p>
             <p class="dilemma-question">Do you take them in?</p>
