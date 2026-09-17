@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>D. S. Echo | Speculative Fiction About Impossible Choices</title>
   <meta name="description" content="D. S. Echo writes character-driven speculative fiction about morality, responsibility, authority, and the consequences of impossible choices.">
   <meta name="theme-color" content="#1b1917">
   <link rel="canonical" href="https://dsechoauthor.github.io/dsecho/">
   <link rel="icon" href="dsecho-logo.png" type="image/png">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="D. S. Echo | Ordinary people. Impossible choices.">
   <meta property="og:description" content="Character-driven speculative fiction about morality, responsibility, and the consequences of decisions with no clean answer.">
   <meta property="og:url" content="https://dsechoauthor.github.io/dsecho/">
   <meta property="og:image" content="https://dsechoauthor.github.io/dsecho/dsecho-logo.png">
   <meta property="og:image:alt" content="D. S. Echo author mark">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="D. S. Echo | Ordinary people. Impossible choices.">
   <meta name="twitter:description" content="Character-driven speculative fiction about morality, responsibility, and the consequences of impossible choices.">
@@ -35,7 +32,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -52,10 +48,7 @@
       margin-top: 0;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
     nav {
       border-bottom: 1px solid var(--border);
@@ -102,9 +95,7 @@
     }
 
     .nav-links a:hover,
-    .social-links a:hover {
-      color: var(--text);
-    }
+    .social-links a:hover { color: var(--text); }
 
     .hero {
       min-height: 72vh;
@@ -205,9 +196,7 @@
     }
 
     .button:hover,
-    .choice-button:hover {
-      opacity: 0.88;
-    }
+    .choice-button:hover { opacity: 0.88; }
 
     section { padding: 84px 24px; }
 
@@ -218,6 +207,19 @@
 
     .book-section { background: var(--bg-soft); }
 
+    .series-intro {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .series-intro p,
+    .book-copy p,
+    .dilemmas > .section-inner > p,
+    .about-copy {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
     .book-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
@@ -225,14 +227,13 @@
       align-items: start;
     }
 
-    .book-copy { max-width: 720px; }
-
-    .book-copy p,
-    .dilemmas > .section-inner > p,
-    .about-copy {
-      color: var(--muted);
-      font-size: 1.08rem;
+    .book-layout + .book-layout {
+      margin-top: 54px;
+      padding-top: 54px;
+      border-top: 1px solid var(--border);
     }
+
+    .book-copy { max-width: 720px; }
 
     .series-line {
       color: var(--accent-soft);
@@ -291,13 +292,18 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .dilemma-card {
+    .dilemma-grid {
+      display: grid;
+      gap: 22px;
       margin-top: 38px;
+    }
+
+    .dilemma-card {
       border: 1px solid var(--border);
       background: var(--bg-deep);
       padding: 30px;
       border-radius: 4px;
-      max-width: 820px;
+      max-width: 860px;
     }
 
     .dilemma-card p {
@@ -338,6 +344,16 @@
       font-size: 1.15rem;
       font-weight: normal;
     }
+
+    .choice-result h4 {
+      color: var(--accent-soft);
+      margin: 18px 0 6px;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .choice-result p { margin-top: 6px; }
 
     .choice-note {
       margin-top: 18px;
@@ -396,9 +412,8 @@
         <div class="eyebrow">Fiction by D. S. Echo</div>
         <h1>Ordinary people.<br>Impossible choices.</h1>
         <p>Fiction about morality, responsibility, and the consequences of decisions with no clean answer.</p>
-
         <div class="button-row">
-          <a class="button" href="#books">Discover the Book</a>
+          <a class="button" href="#books">Discover the Series</a>
           <a class="button secondary" href="#dilemmas">Enter the Dilemmas</a>
         </div>
       </div>
@@ -406,27 +421,47 @@
 
     <section class="book-section" id="books">
       <div class="section-inner">
+        <div class="series-intro">
+          <div class="section-label">The Hawthorne Series</div>
+          <h2>Hawthorne</h2>
+          <p>Character-driven post-apocalyptic fiction about ordinary people building something after collapse—and the moral choices that follow when survival is no longer the only question.</p>
+        </div>
+
         <div class="book-layout">
           <div class="book-copy">
             <div class="section-label">Coming Soon</div>
             <div class="series-line">HAWTHORNE I</div>
             <h2>The Weight of Shelter</h2>
             <div class="subtitle">A Novel of Collapse and Conscience</div>
-
             <p>Gray Fever is killing people faster than the systems built to protect them can respond.</p>
-
             <p>Micah Carver is an inventory manager. He is used to counting parts, shortages, and deciding what can be stretched.</p>
-
             <div class="highlight">Then the numbers become people.</div>
-
             <p>A character-driven post-apocalyptic novel about conscience, responsibility, authority, and the moral cost of keeping people alive when there is no longer a system to decide what is fair.</p>
           </div>
 
-          <aside class="book-status" aria-label="Book release status">
+          <aside class="book-status" aria-label="Book One release status">
             <strong>Release information</strong>
             <p><em>The Weight of Shelter</em> is currently being prepared for publication.</p>
             <p>Edition links and availability will appear here when they are ready.</p>
             <span class="coming-link">Kindle • Paperback • More to come</span>
+          </aside>
+        </div>
+
+        <div class="book-layout">
+          <div class="book-copy">
+            <div class="section-label">In Progress</div>
+            <div class="series-line">HAWTHORNE II</div>
+            <h2>The Terms of Alliance</h2>
+            <p>Hawthorne has learned how to endure. The next problem is what happens when independent communities can no longer pretend that roads, fuel, information, medicine, and risk belong to only one place.</p>
+            <p>Cooperation can protect people. It can also create expectations, obligations, and leverage.</p>
+            <div class="highlight">How much can people share before cooperation starts to feel like control?</div>
+          </div>
+
+          <aside class="book-status" aria-label="Book Two status">
+            <strong>In Progress</strong>
+            <p><em>The Terms of Alliance</em> is the second novel in the Hawthorne series.</p>
+            <p>More information will be added as the manuscript develops.</p>
+            <span class="coming-link">Hawthorne II</span>
           </aside>
         </div>
       </div>
@@ -436,36 +471,100 @@
       <div class="section-inner">
         <div class="section-label">Interactive</div>
         <h2>The Hawthorne Dilemmas</h2>
-
         <p>Meet the people. Weigh the choices. Live with the consequences.</p>
         <p>Interactive moral scenarios inspired by the pressures at the heart of the Hawthorne series.</p>
         <p>There is no correct answer—only the weight of choosing.</p>
 
-        <div class="dilemma-card">
-          <div class="section-label">Sample Dilemma</div>
-          <h3>One reserve. Two needs.</h3>
+        <div class="dilemma-grid">
+          <div class="dilemma-card">
+            <div class="section-label">Dilemma One</div>
+            <h3>One reserve. Two needs.</h3>
+            <p>A settlement has one remaining emergency battery bank before a hard freeze. The same reserve can either extend overnight radio coverage for outside warnings or keep critical building circulation running longer if the generator fails.</p>
+            <p class="dilemma-question">Where do you put the reserve?</p>
+            <div class="choice-row">
+              <button class="choice-button" type="button" onclick="showChoice('d1','radio')">Protect communications</button>
+              <button class="choice-button secondary" type="button" onclick="showChoice('d1','building')">Protect building systems</button>
+            </div>
 
-          <p>A settlement has one remaining emergency battery bank before a hard freeze. The same reserve can either extend overnight radio coverage for outside warnings or keep critical building circulation running longer if the generator fails.</p>
+            <div class="choice-result" id="d1-radio">
+              <strong>You protect communications.</strong>
+              <h4>Why it makes sense</h4>
+              <p>Reliable radio coverage gives the settlement a chance to hear about approaching danger, road failures, medical emergencies, or another community asking for help. Information can prevent people from walking into a problem they never saw coming, and keeping contact open also protects relationships that may matter far beyond one night.</p>
+              <h4>What it costs</h4>
+              <p>The battery is now unavailable to support the occupied buildings. If the generator fails during the coldest hours, circulation drops sooner and the people already under your roof face a more immediate physical risk. You chose a wider field of protection, but you did it by accepting more danger for the people closest to you.</p>
+              <p><em>Would the decision still feel right if the generator actually failed?</em></p>
+            </div>
 
-          <p class="dilemma-question">Where do you put the reserve?</p>
-
-          <div class="choice-row">
-            <button class="choice-button" type="button" onclick="showChoice('radio')">Protect communications</button>
-            <button class="choice-button secondary" type="button" onclick="showChoice('building')">Protect building systems</button>
+            <div class="choice-result" id="d1-building">
+              <strong>You protect building systems.</strong>
+              <h4>Why it makes sense</h4>
+              <p>The people inside are not hypothetical. They are already depending on the settlement to keep occupied spaces safe. Reserving power for circulation buys time if the generator fails and reduces the chance that a mechanical problem becomes a medical one during the freeze.</p>
+              <h4>What it costs</h4>
+              <p>Radio coverage ends earlier. That may mean missing a warning, losing the chance to coordinate with another group, or failing to hear someone who needs help. You protected the people you could see, but the decision may leave you blind to risks outside the walls—and to people who believed you were still listening.</p>
+              <p><em>Does responsibility begin with the people already inside, or with everyone your choices can still affect?</em></p>
+            </div>
           </div>
 
-          <div class="choice-result" id="radio-result">
-            <strong>You protect communications.</strong>
-            <p>You preserve more warning time and keep outside contact alive—but a prolonged outage leaves less stored power for the systems protecting occupied buildings from the cold.</p>
+          <div class="dilemma-card">
+            <div class="section-label">Dilemma Two</div>
+            <h3>The road everyone needs.</h3>
+            <p>Three independent communities depend on the same damaged road. One community has heavy equipment, one has fuel, and one has the largest labor pool. The repair will benefit all three, but no one wants a shared project to become a precedent for shared authority.</p>
+            <p class="dilemma-question">Do you create a joint repair agreement, or keep each group responsible only for its own stretch?</p>
+            <div class="choice-row">
+              <button class="choice-button" type="button" onclick="showChoice('d2','joint')">Create a joint agreement</button>
+              <button class="choice-button secondary" type="button" onclick="showChoice('d2','separate')">Keep responsibilities separate</button>
+            </div>
+
+            <div class="choice-result" id="d2-joint">
+              <strong>You create a joint agreement.</strong>
+              <h4>Why it makes sense</h4>
+              <p>The repair becomes faster, safer, and more efficient because each community contributes what it can actually provide. Equipment is not sitting idle for lack of fuel, fuel is not wasted without enough labor, and everyone gains a road that works as one system rather than three disconnected pieces.</p>
+              <h4>What it costs</h4>
+              <p>The moment the groups make one successful shared decision, they have created a precedent. Next time there is a dispute over fuel, security, salvage, or access, someone can point back to this agreement and argue that cooperation already exists. A practical solution can quietly become an expectation—and expectations can become pressure.</p>
+              <p><em>When does coordination become authority, even if nobody intended it to?</em></p>
+            </div>
+
+            <div class="choice-result" id="d2-separate">
+              <strong>You keep responsibilities separate.</strong>
+              <h4>Why it makes sense</h4>
+              <p>Every community keeps control of its own people, equipment, and resources. There is no shared command structure, no argument over who decides priorities, and no danger that helping once will be interpreted as accepting a permanent obligation.</p>
+              <h4>What it costs</h4>
+              <p>The road may remain unreliable longer because the resources do not line up where they are most useful. One section can be repaired while another remains dangerous. People may be injured or cut off because everyone protected their independence so carefully that they failed to solve a problem none of them could solve alone.</p>
+              <p><em>Is independence still a virtue when everyone pays for the inefficiency?</em></p>
+            </div>
           </div>
 
-          <div class="choice-result" id="building-result">
-            <strong>You protect building systems.</strong>
-            <p>You buy more time for heat-supporting equipment and reduce the immediate risk inside—but your ability to hear an outside warning may disappear earlier in the night.</p>
-          </div>
+          <div class="dilemma-card">
+            <div class="section-label">Dilemma Three</div>
+            <h3>Nine people at the gate.</h3>
+            <p>A small settlement has food and sleeping space for nine more people through winter, but taking them in will erase nearly all of the community's safety margin. Turning them away protects the current residents. Accepting them may save nine lives—and make every future shortage harder.</p>
+            <p class="dilemma-question">Do you take them in?</p>
+            <div class="choice-row">
+              <button class="choice-button" type="button" onclick="showChoice('d3','accept')">Accept them</button>
+              <button class="choice-button secondary" type="button" onclick="showChoice('d3','refuse')">Turn them away</button>
+            </div>
 
-          <p class="choice-note">This sample is an original interactive scenario inspired by the series' themes, not a scene from the novel.</p>
+            <div class="choice-result" id="d3-accept">
+              <strong>You accept them.</strong>
+              <h4>Why it makes sense</h4>
+              <p>You have the capacity today, and refusing people while beds and food still exist can feel like protecting comfort rather than necessity. Nine additional people may also bring skills, labor, knowledge, and relationships that make the settlement stronger than the inventory sheet suggests.</p>
+              <h4>What it costs</h4>
+              <p>Your reserve disappears. A crop failure, illness, damaged heater, or delayed supply run now threatens more people with less room to recover. Current residents did not create the crisis at the gate, but they will share the consequences of your compassion. You may have saved nine people by making everyone less secure.</p>
+              <p><em>How much risk are you allowed to impose on people who already trusted you?</em></p>
+            </div>
+
+            <div class="choice-result" id="d3-refuse">
+              <strong>You turn them away.</strong>
+              <h4>Why it makes sense</h4>
+              <p>The settlement keeps the buffer that protects everyone already inside from the problems nobody can predict. Leadership has a responsibility not only to use today's inventory, but to preserve enough margin for tomorrow's failure. Protecting capacity can be the difference between one hard winter and a cascading emergency.</p>
+              <h4>What it costs</h4>
+              <p>The nine people still exist after the gate closes. They may become sick, desperate, or die somewhere else because you chose to protect a reserve that might never be needed. The community remains safer, but that safety now has faces attached to its price.</p>
+              <p><em>Is preserving a margin the same as preserving lives, or only choosing whose lives count first?</em></p>
+            </div>
+          </div>
         </div>
+
+        <p class="choice-note">These are original interactive scenarios inspired by the series' themes, not scenes from the novels.</p>
       </div>
     </section>
 
@@ -473,7 +572,6 @@
       <div class="section-inner">
         <div class="section-label">About</div>
         <h2>D. S. Echo</h2>
-
         <p class="about-copy">D. S. Echo writes character-driven speculative fiction about ordinary people facing difficult ethical choices in extraordinary circumstances.</p>
         <p class="about-copy">His work explores responsibility, fairness, authority, and the philosophical dilemmas that arise when there are no easy answers and every decision carries a cost.</p>
       </div>
@@ -486,17 +584,15 @@
       <span>•</span>
       <a href="https://www.threads.net/@dsechoauthor" target="_blank" rel="noopener">Threads</a>
     </div>
-
     <div class="copyright">© 2026 D. S. Echo</div>
   </footer>
 
   <script>
-    function showChoice(choice) {
-      const radio = document.getElementById('radio-result');
-      const building = document.getElementById('building-result');
-
-      radio.style.display = choice === 'radio' ? 'block' : 'none';
-      building.style.display = choice === 'building' ? 'block' : 'none';
+    function showChoice(dilemma, choice) {
+      const card = document.getElementById(dilemma + '-' + choice);
+      const results = document.querySelectorAll('[id^="' + dilemma + '-"]');
+      results.forEach(result => result.style.display = 'none');
+      card.style.display = 'block';
     }
   </script>
 </body>
